@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Artur Carter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="profile.jpg" alt="Artur Carter" class="profile-pic"/>
+      <h2>Artur Carter</h2>
+      <p>Front-end Developer<br>UI/UX Designer</p>
+      <ul class="info">
+        <li><strong>Residence:</strong> Canada</li>
+        <li><strong>City:</strong> Toronto</li>
+        <li><strong>Age:</strong> 29</li>
+      </ul>
+      <div class="languages">
+        <span>French</span>
+        <span>English</span>
+        <span>Spanish</span>
+      </div>
+      <div class="skills">
+        <label>HTML</label>
+        <progress value="90" max="100"></progress>
+        <label>CSS</label>
+        <progress value="80" max="100"></progress>
+      </div>
+    </aside>
+    
+    <main class="main-content">
+      <section class="hero">
+        <div>
+          <h1>Discover my Amazing Art Space!</h1>
+          <p><code>I build automation tools.</code></p>
+          <button>Explore Now</button>
+        </div>
+        <img src="hero-image.jpg" alt="Hero" class="hero-image" />
+      </section>
+
+      <section class="stats">
+        <div><strong>10+</strong><p>Years Experience</p></div>
+        <div><strong>143</strong><p>Completed Projects</p></div>
+        <div><strong>114</strong><p>Happy Customers</p></div>
+        <div><strong>20+</strong><p>Honors and Awards</p></div>
+      </section>
+
+      <section class="services">
+        <h2>My Services</h2>
+        <div class="service-cards">
+          <div class="card">
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="card">
+            <h3>UI/UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="card">
+            <h3>Sound Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #1e1e2f;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #2c2c3e;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.sidebar h2 {
+  margin-bottom: 5px;
+}
+
+.sidebar p {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.info {
+  list-style: none;
+  font-size: 0.85em;
+  margin-bottom: 15px;
+}
+
+.languages span {
+  display: inline-block;
+  background: #444;
+  padding: 4px 8px;
+  margin: 3px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+
+.skills label {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.skills progress {
+  width: 100%;
+  height: 8px;
+  margin-bottom: 10px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero button {
+  background: #f0b400;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.stats div {
+  padding: 10px;
+}
+
+.stats strong {
+  font-size: 1.5em;
+  display: block;
+}
+
+.services h2 {
+  margin-bottom: 15px;
+}
+
+.service-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #2f2f44;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1;
+}
+
